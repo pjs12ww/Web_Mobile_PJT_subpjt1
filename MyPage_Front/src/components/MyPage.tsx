@@ -41,7 +41,7 @@ export default function MyPage() {
 
                     </Grid>
                     <Grid>
-                        
+                        <h1>JIRA TEST</h1>
                     </Grid>
                 </main>
             </Container>

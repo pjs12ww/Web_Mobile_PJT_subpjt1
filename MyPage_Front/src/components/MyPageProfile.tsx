@@ -14,7 +14,8 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
     content: {
-        borderBottom: `1px solid ${theme.palette.divider}`
+        borderBottom: `1px solid ${theme.palette.divider}`,
+        padding: theme.spacing(1),
     },
 }));
 

@@ -6,8 +6,8 @@ import Grid from '@material-ui/core/Grid';
 
 import Header from './Header';
 import MyPageHead from './MyPageHead';
-import MyPageProfile from './MyPageProfile'
-
+import MyPageProfile from './MyPageProfile';
+import MyPageReview from './MyPageReview';
 
 const sections = [
     { title: '정보', url: '#' },
@@ -15,11 +15,31 @@ const sections = [
     { title: 'MyReview', url: '#' }
 ]
 
+// 임시 Profile data
 const profile = [
     { title: 'Profile' },
     { title: 'name' },
     { title: 'location' },
     { title: 'prefer_wine_list'}
+]
+
+// 임시 Review data
+const reviews = [
+    { profileImg: '',
+    name: '카카',
+    content: '적셔',
+
+},
+{ profileImg: '',
+    name: '카카',
+    content: '적셔',
+
+},
+{ profileImg: '',
+    name: '카카',
+    content: '적셔',
+
+}
 ]
 
 const mainFeaturedPost = {
@@ -39,16 +59,9 @@ export default function MyPage() {
                 <Header title="MyReview" sections={sections} />
                 <MyPageHead post={mainFeaturedPost} />
                 <main>
-                    <Grid container spacing={5}>
+                    <Grid container spacing={10}>
                         <MyPageProfile sections={profile}/>
-                        {/* <Main />
-                        <FriendList /> */}
-                    </Grid>
-                    <Grid>
-                        
-                    </Grid>
-                    <Grid>
-                        
+                        <MyPageReview reviews={reviews}/>
                     </Grid>
                 </main>
             </Container>

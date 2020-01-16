@@ -1,12 +1,14 @@
+// MyPageProfile
+// Main 내 Grid 중 왼쪽에 위치
+// 해상도가 줄어들면 없어지도록 설정 필요
+// 내용은 Profile 이라는 맨 윗단 + { 이름, 활동지역, 선호 주류, 선호 안주?... etc }
+// border 를 통해 내용 구분 
+
 import * as React from 'react';
 // 타입 확인하는 라이브러리
 import * as PropTypes from 'prop-types';
 
 import { makeStyles } from '@material-ui/core'
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
@@ -20,17 +22,19 @@ export default function MyPageProfile(props) {
     const classes = useStyles(props);
     const { sections } = props;
     return (
-        <div>
-            {// nav 항목들
-                sections.map(section => (
-                    <div
-                        color="inherit"
-                        key={section.title}
-                        className={classes.content}
-                        >
-                            {section.title}
-                    </div>
-                ))}
-        </div>
+        <React.Fragment>
+            <div>
+                {
+                    sections.map(section => (
+                        <div
+                            color="inherit"
+                            key={section.title}
+                            className={classes.content}
+                            >
+                                {section.title}
+                        </div>
+                    ))}
+            </div>
+        </React.Fragment>
     );
 }

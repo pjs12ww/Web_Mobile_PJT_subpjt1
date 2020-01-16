@@ -48,13 +48,16 @@ export default function MyPageHead(props) {
     const { post } = props;
   
     return (
-        <Paper 
+      <React.Fragment>
+        <div
         className={classes.mainFeaturedPost} 
         style={{ backgroundImage: `url(${post.image})` }}
         >
             {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
             <div className={classes.overlay} />
-        </Paper>
 
+            
+        </div>
+      </React.Fragment>
     );
 }

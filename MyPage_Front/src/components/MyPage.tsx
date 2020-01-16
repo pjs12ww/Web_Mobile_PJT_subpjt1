@@ -37,6 +37,12 @@ export default function MyPage() {
                         {/* <Main />
                         <FriendList /> */}
                     </Grid>
+                    <Grid>
+
+                    </Grid>
+                    <Grid>
+                        
+                    </Grid>
                 </main>
             </Container>
         </React.Fragment>

@@ -15,6 +15,13 @@ const sections = [
     { title: 'MyReview', url: '#' }
 ]
 
+const profile = [
+    { title: 'Profile' },
+    { title: 'name' },
+    { title: 'location' },
+    { title: 'prefer_wine_list'}
+]
+
 const mainFeaturedPost = {
     title: 'Title of a longer featured blog post',
     description:
@@ -33,15 +40,15 @@ export default function MyPage() {
                 <MyPageHead post={mainFeaturedPost} />
                 <main>
                     <Grid container spacing={5}>
-                        <MyPageProfile />
+                        <MyPageProfile sections={profile}/>
                         {/* <Main />
                         <FriendList /> */}
                     </Grid>
                     <Grid>
-
+                        
                     </Grid>
                     <Grid>
-                        <h1>JIRA TEST</h1>
+                        
                     </Grid>
                 </main>
             </Container>

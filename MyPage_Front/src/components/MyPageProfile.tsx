@@ -38,3 +38,7 @@ export default function MyPageProfile(props) {
         </React.Fragment>
     );
 }
+
+MyPageProfile.propTypes = {
+    sections: PropTypes.array,
+};

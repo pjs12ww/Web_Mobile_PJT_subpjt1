@@ -41,8 +41,10 @@
 
 2. JPX
    
-   
-   
+
+
+
+
 3. errors
 
    - Warning: Each child in an array or iterator should have a unique "key" prop.
@@ -62,5 +64,5 @@ CORS
 
 ### 참고자료
 
-https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/templates/blog
+https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/templates/blogdbda2bc8ddfb8abc3d7b2d6fcb7a347ee98b61e6
 

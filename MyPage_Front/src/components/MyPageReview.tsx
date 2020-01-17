@@ -38,7 +38,9 @@ export default function MyPageReview(props) {
                 <div>
                     {
                         reviews.map(review => (
-                            <div className={classes.review}>
+                            <div 
+                            className={classes.review}
+                            key={review.id}>
                                 <div>
                                     <img src={review.profileImage} alt=""/>
                                     <Typography 

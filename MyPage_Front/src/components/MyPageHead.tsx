@@ -25,15 +25,7 @@ const useStyles = makeStyles(theme => ({
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
     },
-    overlay: {
-      position: 'absolute',
-      top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0,
-      backgroundColor: 'rgba(0,0,0,.3)',
-    },
-    mainFeaturedPostContent: {
+    myPageHead: {
       position: 'relative',
       padding: theme.spacing(3),
       [theme.breakpoints.up('md')]: {
@@ -54,7 +46,6 @@ export default function MyPageHead(props) {
         style={{ backgroundImage: `url(${post.image})` }}
         >
             {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
-            <div className={classes.overlay} />
 
             
         </div>

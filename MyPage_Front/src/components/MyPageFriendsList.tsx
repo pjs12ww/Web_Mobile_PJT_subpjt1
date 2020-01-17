@@ -29,7 +29,7 @@ export default function MyPageFriendsList(props) {
                     friends.map(section => (
                         <div
                             color="inherit"
-                            key={section.title}
+                            key={section.id}
                             className={classes.friend}
                         >
                             {section.name}

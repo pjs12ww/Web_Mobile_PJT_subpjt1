@@ -28,18 +28,21 @@ const profile = [
 // 임시 Review data
 const reviews = [
     {
+        id: 1,
         profileImg: '',
         name: '카카',
         content: '적셔',
 
     },
     {
+        id: 2,
         profileImg: '',
         name: '카카',
         content: '적셔',
 
     },
     {
+        id: 3,
         profileImg: '',
         name: '카카',
         content: '적셔',
@@ -51,18 +54,23 @@ const reviews = [
 const friends = [
 
     {
+        id: 1,
         name: '김병인',
     },
     {
+        id: 2,
         name: '김주홍',
     },
     {
+        id: 3,
         name: '박재성',
     },
     {
+        id: 4,
         name: '최예슬',
     },
     {
+        id: 5,
         name: '허대원',
     },
 ]

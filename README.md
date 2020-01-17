@@ -41,6 +41,14 @@
 
 2. JPX
    
+   
+   
+3. errors
+
+   - Warning: Each child in an array or iterator should have a unique "key" prop.
+
+     => 리스트의 content를 호출할 때 key가 고유의 값으로 지정되어 있지 않아서 발생
+     => key={ a.id } 혹은 key={ a.index } 로 변경함으로써 해결할 수 있다.
 
 
 
